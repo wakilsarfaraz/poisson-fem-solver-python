@@ -1,27 +1,18 @@
 {
-  "name": "Python 3 with useful data libraries",
+  "name": "Poisson FEM Solver",
   "image": "mcr.microsoft.com/devcontainers/python:3.11-bullseye",
   "hostRequirements": {
     "cpus": 2
   },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "python3 -m pip install -r requirements.txt",
-  "postCreateCommand": "sudo apt-get update && \\\n    sudo apt-get install -y unixodbc-dev && \\\n    curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add - && \\\n    curl https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee /etc/apt/sources.list.d/mssql-release.list && \\\n    sudo apt-get update && \\\n    sudo ACCEPT_EULA=Y apt-get install -y msodbcsql18",
+  "updateContentCommand": "python3 -m pip install --upgrade pip && python3 -m pip install -r .devcontainer/requirements.txt",
   "customizations": {
-    "codespaces": {
-      "openFiles": []
-    },
     "vscode": {
       "extensions": [
         "ms-toolsai.jupyter",
         "ms-python.python",
-        "ms-python.vscode-pylance",
-        "donjayamanne.python-extension-pack",
-        "streetsidesoftware.code-spell-checker",
-        "george-alisson.html-preview-vscode",
-        "ms-toolsai.datawrangler"
+        "ms-python.vscode-pylance"
       ]
     }
   }
 }
-
