@@ -1,0 +1,23 @@
+
+# python interface
+ipython
+jupyter >= 1.0
+
+# Data visualisation
+matplotlib
+seaborn >= 0.12
+plotly
+
+# Database connection and manipulation
+pandas >= 2.0
+sqlalchemy >= 2.0
+pyodbc>=5.2.0
+jupysql
+
+
+# Data modelling
+scikit-learn 
+statsmodels
+
+
+

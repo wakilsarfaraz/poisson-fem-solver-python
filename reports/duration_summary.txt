@@ -1,0 +1,2 @@
+Minimum	Maximum	Total	Average
+46	185	115272	115.00

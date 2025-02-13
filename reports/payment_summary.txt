@@ -1,0 +1,2 @@
+Records	Minimum	Maximum	Total	Average
+16049	0.00	11.99	67416.51	4.200667
